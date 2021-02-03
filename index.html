@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>CuttieFlix</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav class="nav">
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+
+            <nav class="icons">
+                
+                <!-- <a href="#"><i class="material-icons md-27">search</i></a>
+                <a href="#"><i class="material-icons md-27">card_giftcard</i></a>
+                <a href="#"><i class="material-icons md-27">notifications</i></a> -->
+                <ul class="c-dropdown">
+                    <li class="c-dropdown__link">
+                        <a href="#"><i class="material-icons md-27">search</i></a>
+                    </li>
+                    <li class="c-dropdown__link">
+                        <a href="#"><i class="material-icons md-27">card_giftcard</i></a>
+                    </li>
+                    <li class="c-dropdown__link">
+                        <a href="#"><i class="material-icons md-27">notifications</i></a>
+                    </li>
+                    
+                    <li class="c-dropdown__link jorge">
+                        <img src="https://occ-0-1380-420.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABRLIW5ni1fjn2M8-RvajSSJDYzNpakEjTQUMOzZXMubSaOI_5gWM3NMuONGFltTny9wBh2dLTe0ViMw-pN9-HPk.png?r=d36"
+                    alt="profile picture" style="border-radius: 4px;cursor: pointer;">
+                        
+                        <ul class="c-dropdown__submenu">
+
+                            <!-- <li class="c-dropdown__submenu-item">
+                                <a href="" class="c-dropdown__submenu-link">
+                                    <div class="profile-wraper">
+                                        <img src="{{profile.pic}}"
+                    alt="profile picture" style="border-radius: 4px;">
+                                        <span>{{profile.id}}</span>
+                                    </div>
+                                </a>
+                            </li> -->
+
+                            <li class="c-dropdown__submenu-item">
+                                <a href="" class="c-dropdown__submenu-link">
+                                    <div class="profile-wraper">
+                                        <img src="https://occ-0-1380-1123.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABUS-mxBlzBe3mtZC-Qf-HtdmtmA8xzybbQ8H9_zVphUGC1LOLSM6F8ztCIr96ohgw3QFwRJmRrnDTu8rZe1MpeI.png?r=373" alt="profile picture" style="border-radius: 4px;">
+                                        <span>Gabzinho</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="c-dropdown__submenu-item">
+                                <a href="" class="c-dropdown__submenu-link">
+                                    <div class="profile-wraper">
+                                        <img src="https://occ-0-1380-1123.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABR4D1TVaku6xHGsAIlIT0Zy5kW7LZ_PZWlFzDnb-l4RwSs_0kb-8sfvh7NUaEeWooArb8gCteE9e_jAKKqBcbwU.png?r=2ca" alt="profile picture" style="border-radius: 4px;">
+                                        <span>Biel</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="c-dropdown__submenu-item manage-profile">
+                                <a href="" class="c-dropdown__submenu-link">Gerenciar perfis</a>
+                            </li>
+                            <!-- hr -->
+                           <!--  <hr noshade=”noshade” width="179px" size="0.1px" style="left:0;position: absolute;margin-bottom: 20px;z-index: 999;"/> -->
+                            <!-- hr -->
+                            <ul class="account-links  c-dropdown__submenu" >
+                                <li class="c-dropdown__submenu-item">
+                                    <a href="" class="c-dropdown__submenu-link"><b>Conta</b></a>
+                                </li>
+                                <li class="c-dropdown__submenu-item">
+                                    <a href="" class="c-dropdown__submenu-link"><b>Centro de ajuda</b></a>
+                                </li>
+                                <li class="c-dropdown__submenu-item">
+                                    <a href="" class="c-dropdown__submenu-link"><b>Sair da Netflix</b></a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <div class="dropdown">
+                <img src="https://occ-0-1380-420.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABRLIW5ni1fjn2M8-RvajSSJDYzNpakEjTQUMOzZXMubSaOI_5gWM3NMuONGFltTny9wBh2dLTe0ViMw-pN9-HPk.png?r=d36"
+                    alt="profile picture" style="border-radius: 4px;cursor: pointer;">
+                    <i class="material-icons md-27 ico">arrow_drop_down</i>
+                <div class="callout-arrow" style="opacity: 1; transition-duration: 150ms;"></div>
+                <div class="dropdown-content theme">
+                    <div class="account-drop-down sub-menu theme-lakira"
+                        style="opacity: 1; transition-duration: 150ms;">
+                        <div class="ptrack-content"
+                            data-ui-tracking-context="%7B%22appView%22:%22accountDropdownPanel%22%7D"
+                            data-tracking-uuid="350a4f18-4e21-455f-9f8d-654c1d5d5b97">
+                            <div class="topbar"></div>
+                            <H1>HELLO WORLD PORRA</H1>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+           
+        </div>
+    </header>
+</body>
+
+</html>
